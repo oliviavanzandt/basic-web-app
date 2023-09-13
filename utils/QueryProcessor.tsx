@@ -7,5 +7,12 @@ export default function QueryProcessor(query: string): string {
     );
   }
 
+  if (query.toLowerCase().includes("ovanzand")) {
+    return (
+      "This is Olivia Van Zandt's AndrewID! ");
+  }
+
   return "";
+
+  
 }
