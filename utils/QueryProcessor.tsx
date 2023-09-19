@@ -39,6 +39,13 @@ export default function QueryProcessor(query: string): string {
     return (Math.max(x,y,z)).toString();
   }
 
+  const subtractMatch = query.match(/What is (\d+) minus (\d+)/);
+  if (subtractMatch) {
+    const x: number = parseInt(subtractMatch[1]);
+    const y: number = parseInt(subtractMatch[2]);
+    return (x-y).toString();
+  }
+
 
   return "";
 
