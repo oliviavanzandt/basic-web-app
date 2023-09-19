@@ -12,6 +12,11 @@ export default function QueryProcessor(query: string): string {
       "This is Olivia Van Zandt's AndrewID! ");
   }
 
+  if (query.toLowerCase().includes("what is your name?")) {
+    return (
+      "Olivia");
+  }
+
   return "";
 
   
