@@ -31,7 +31,7 @@ export default function QueryProcessor(query: string): string {
     return (x*y).toString();
   }
 
-  const largestNum = query.match(/Which of the following numbers is the largest: (\d+),(\d+), (\d+)/);
+  const largestNum = query.match(/Which of the following numbers is the largest: (\d+), (\d+), (\d+)/);
   if (largestNum) {
     const x: number = parseInt(largestNum[1]);
     const y: number = parseInt(largestNum[2]);
@@ -45,6 +45,8 @@ export default function QueryProcessor(query: string): string {
     const y: number = parseInt(subtractMatch[2]);
     return (x-y).toString();
   }
+
+
 
 
   return "";
